@@ -5,7 +5,7 @@ export const Bio = {
          "Management Student",
     ],
     description:
-      "I am in my second year of McMaster's Software Engineering and Management Program. I am eager to make new connections and challenge myself to new experiences. Looking forward to future opportunities and cannot wait to explore the Software Industry. ",
+      "I am in my third year of McMaster's Software Engineering and Management Program. I am eager to make new connections and challenge myself to new experiences. Looking forward to future opportunities and cannot wait to explore the Software Industry. ",
     github: "https://github.com/neha-bhatla",
     resume:
       "https://www.linkedin.com/in/neha-bhatla",
