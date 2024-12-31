@@ -13,103 +13,26 @@ export const Bio = {
   };
   
   export const skills = [
-    {
-      title: "Frontend",
-      skills: [
-        {
-            name: "React Js",
-            image:
-              "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-          },
-          {
-            name: "Next Js",
-            image:
-              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
-          },
-          {
-            name: "HTML",
-            image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-          },
-          {
-            name: "CSS",
-            image:
-              "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
-          },
-          {
-            name: "JavaScript",
-            image:
-              "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-          },
-      ],
-    },
-    {
-        title: "Backend",
-        skills: [
-          {
-            name: "Node Js",
-            image: "https://nodejs.org/static/images/logo.svg",
-          },
-          {
-            name: "Python",
-            image:
-              "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-          },
-          {
-            name: "Java",
-            image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-          },
-          {
-            name: "C",
-            image: "https://www.postgresql.org/media/img/about/press/elephant.png",
-          },
-      ],
-    },
-    {
-        title: "Tools",
-        skills: [
-          {
-            name: "Git",
-            image:
-              "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
-          },
-          {
-            name: "GitHub",
-            image:
-              "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-          },
-          {
-            name: "inteliJ",
-            image:
-              "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-          },
-          {
-            name: "Jupyter Notebook",
-            image:
-              "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-          },
-          {
-            name: "VS Code",
-            image:
-              "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-          },
-          {
-            name: "AutoDesk Inventor",
-            image:
-              "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-          },
-          {
-            name: "Microsoft Excel",
-            image:
-              "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-          },
-        ],
-      },
   ];
   
   export const experiences = [
     {
         id: 0,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUt8dzBQWFjVa9nrKFhvFpGcv1iaiODBZxuA&s",
+        role: "I&IT Service Designer",
+        company: "Ministry of Education",
+        date: "May 2024 - August 2024",
+        desc: "Led collaborative efforts in wireframing and prototyping for large-scale projects using Figma, conducting comprehensive user experience (UX) research to design accessible and user-friendly platforms. Designed state diagrams to facilitate software development within an agile framework, integrating research to refine and improve accessibility within Ontario’s digital services. Collaborated with software developers to understand the needs of Ontario residents applying for child care services through a provincial website and designed screen prototypes for the platform.",
+        skills: [
+          "Figma",
+          "Microsoft Visio",
+          "Microsoft Excel",
+          "Jira",
+        ],
+        doc: "",
+      },
+      {
+        id: 1,
         img: "https://toronto.schoolsuccess.ca/assets/images/corporate/ss-pictures/english/tutors-in-math.jpg",
         role: "Mathematics and Programming Tutor",
         company: "Freelance",
@@ -119,22 +42,7 @@ export const Bio = {
           "Python",
           "Scratch",
           "Communication Skills",
-          "Organizational Skills ",
           "Juypter Notebook",
-        ],
-        doc: "",
-      },
-      {
-        id: 1,
-        img: "data:image/png;base64,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",
-        role: "Sales Associate",
-        company: "Value Village",
-        date: "May 2023 – August 2023",
-        desc: "Maintained customer presence through effective customer service and interpersonal skills, ensuring a positive shopping experience for patrons",
-        skills: [
-          "Communication Skills",
-          "Organizational Skills ",
-          "Interpersonal Skills",
         ],
         doc: "",
       },

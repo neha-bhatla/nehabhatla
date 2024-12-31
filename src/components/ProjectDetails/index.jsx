@@ -25,7 +25,7 @@ margin: 50px 12px;
 height: min-content;
 background-color: ${({ theme }) => theme.card};
 color: ${({ theme }) => theme.text_primary};
-padding: 20px;
+padding: 40px;
 display: flex;
 flex-direction: column;
 position: relative;
@@ -52,16 +52,15 @@ const Date = styled.div`
     }
 `
 
-
-
 const Desc = styled.div`
     font-size: 16px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary};
-    margin: 8px 6px;
+    margin: 8px 6px 20px 6px;
+    
     @media only screen and (max-width: 600px) {
         font-size: 14px;
-        margin: 6px 6px;
+        margin: 6px 6px 16px 6px;
     }
 `;
 
@@ -87,7 +86,7 @@ const Label = styled.div`
 const Tags = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin: 8px 0px;
+    margin: 20px 0px;
     @media only screen and (max-width: 600px) {
         margin: 4px 0px;
     }
