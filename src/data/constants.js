@@ -1,5 +1,7 @@
 import CoinHubImage from '../images/CoinHub.png';  
-
+import PromptlyImage from '../images/promptly.png';  
+import Promptly2Image from '../images/promptly2.png'; 
+import LinkedOut from '../images/LinkedOut.png'; 
 
 export const Bio = {
     name: "Neha Bhatla!",
@@ -66,6 +68,36 @@ export const Bio = {
   export const projects = [
     {
         id: 0,
+        title: "LinkedOut Reach",
+        date: "HackThe6ix 2024",
+        description:
+          "A web application that connects job seekers to professionals on LinkedIn based on shared experiences and backgrounds, encouraging communication through AI-suggested messages. Utilized the Cohere API to match LinkedIn profiles and provide users with strong connections. Utilized Selenium and BeautifulSoup for web scraping, MongoDB for data management and React.js and TypeScript for an interactive UI",
+        image: 
+          LinkedOut,
+        tags: ["Cohere API", "Flask", "Python", "MongoDB", "ReactJS"],
+        category: "Pygame Application",
+        github: "https://github.com/neha-bhatla/LinkedOutReach.git",
+      },
+      {
+        id: 1,
+        title: "Promptly",
+        date: "StarterHacks 2024",
+        description:
+          "A journaling web application with features for logging entries, searching journal prompts, and ensuring a secure user experience through authentication. Utilized Flask to implement secure APIs and MongoDB for data management, with Next.js and Tailwind CSS for a responsive, user-friendly frontend.",
+        image:
+          Promptly2Image,
+        tags: [
+          "Next.js",
+          "Tailwind CSS",
+          "Python",
+          "Flask",
+          "MongoDB",
+        ],
+        category: "web app",
+        github: "https://github.com/neha-bhatla/promptly.git",
+      },
+      {
+        id: 2,
         title: "CoinHub",
         date: "Dec 2023 - Jan 2023",
         description:
@@ -81,34 +113,7 @@ export const Bio = {
         ],
         category: "web app",
         github: "https://github.com/neha-bhatla/crypto-app",
-      },
-      {
-        id: 1,
-        title: "Pong",
-        date: "Nov 2023 - Nov 2023",
-        description:
-          "Designed a Pong game in Python using Pygame, leveraging object-oriented principles and classes, as well as a captivating versus computer experience, integrating rudimentary AI behaviors for an interactive and challenging gaming ambiance.",
-        image:
-          "pong.png",
-        tags: ["Python", "Pygame", "OOP"],
-        category: "Pygame Application",
-        github: "https://github.com/neha-bhatla/pong-against-computer",
-      },
-      {
-        id: 2,
-        title: "Focus",
-        date: "Dec 2023 - Dec 2023",
-        description:
-          "Developed a fully functional, user-friendly Pomodoro timer and to-do list, utilizing HTML, CSS and JavaScript, tailored for student productivity. Ensured seamless user experience by incorporating local storage, ensuring data persistence across page refreshes.",
-        image:
-          "focus.png",
-        tags: [
-          "HTML5",
-          "CSS",
-          "JavaScript",
-        ],
-        category: "web app",
-        github: "https://github.com/neha-bhatla/Focus",
+        
       },
   ];
   
