@@ -1,3 +1,6 @@
+import CoinHubImage from '../images/CoinHub.png';  
+
+
 export const Bio = {
     name: "Neha Bhatla!",
     roles: [
@@ -66,9 +69,9 @@ export const Bio = {
         title: "CoinHub",
         date: "Dec 2023 - Jan 2023",
         description:
-          "ReactJS-powered cryptocurrency market tracker that seamlessly integrates real-time data retrieval from two APIs, CoinCap and Fixer APIs. It provides a user-friendly interface for indivudals to keep track cryptocoin news.",
+          "ReactJS-powered cryptocurrency market tracker that integrates real-time data retrieval from two APIs, CoinCap and Fixer APIs. It provides a user-friendly interface for indivduals to keep track cryptocoin news.",
         image:
-          "coin.png",
+          CoinHubImage,
         tags: [
           "ReactJS",
           "SCSS",
