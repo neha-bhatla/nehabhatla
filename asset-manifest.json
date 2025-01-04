@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/nehabhatla/static/css/main.bf538fe7.css",
+    "main.js": "/nehabhatla/static/js/main.525358f9.js",
+    "static/media/HeroImage2.png": "/nehabhatla/static/media/HeroImage2.0eb7167a0916a968dd87.png",
+    "static/media/LinkedOut.png": "/nehabhatla/static/media/LinkedOut.2bcb76b9ced73e75e14e.png",
+    "static/media/promptly.png": "/nehabhatla/static/media/promptly.3db0d2ade3039ae64067.png",
+    "static/media/CoinHub.png": "/nehabhatla/static/media/CoinHub.5aebc0b8d2bc85cc1093.png",
+    "static/media/promptly2.png": "/nehabhatla/static/media/promptly2.b539c549f447895506b9.png",
+    "static/media/ContactImage.jpeg": "/nehabhatla/static/media/ContactImage.a4aa041adec2db03fae3.jpeg",
+    "index.html": "/nehabhatla/index.html",
+    "main.bf538fe7.css.map": "/nehabhatla/static/css/main.bf538fe7.css.map",
+    "main.525358f9.js.map": "/nehabhatla/static/js/main.525358f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.525358f9.js"
+  ]
+}
