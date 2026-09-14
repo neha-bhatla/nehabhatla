@@ -1,5 +1,4 @@
 import CoinHubImage from '../images/CoinHub.png';  
-import PromptlyImage from '../images/promptly.png';  
 import Promptly2Image from '../images/promptly2.png'; 
 import LinkedOut from '../images/LinkedOut.png'; 
 
