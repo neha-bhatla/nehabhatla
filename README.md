@@ -23,3 +23,14 @@ to check the build and tests:
 npm run build
 npm test -- --watchAll=false
 ```
+
+## publish an update
+
+commit your changes on `active_updates`, then run:
+
+```sh
+git push origin active_updates
+npm run deploy
+```
+
+the source lives on `active_updates`. the deploy command builds the site and publishes it to `gh-pages` for GitHub Pages.
