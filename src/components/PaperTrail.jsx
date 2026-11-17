@@ -15,7 +15,8 @@ export default function PaperTrail() {
       const height = main.offsetHeight;
       const mainTop = main.getBoundingClientRect().top;
       const sections = [...main.querySelectorAll(':scope > section')];
-      const edge = width < 760 ? 10 : Math.max(24, (width - 1040) / 2 - 38);
+      const mobile = width < 760;
+      const edge = mobile ? 10 : Math.max(20, (width - 1040) / 2 - 38);
       const left = edge;
       const right = width - edge;
       const bounds = sections.map(section => {
@@ -23,22 +24,34 @@ export default function PaperTrail() {
         return { top: rect.top - mainTop, bottom: rect.bottom - mainTop };
       });
       if (!bounds.length) return;
+      const outwardSway = mobile ? 8 : Math.min(72, edge - 4);
+      const inwardSway = mobile ? 2 : Math.min(12, Math.max(0, Math.max(40, (width - 1040) / 2) - edge - 22));
+      // Two soft bends replace each straight run down the side of a section.
+      // Keep Y increasing so scroll position still maps smoothly onto the route.
+      const windDown = (x, fromY, toY) => {
+        const span = Math.max(0, toY - fromY);
+        const direction = x === left ? -1 : 1;
+        const outer = x + direction * outwardSway;
+        const inner = x - direction * inwardSway;
+        return ` C ${outer} ${fromY + span * .16}, ${outer} ${fromY + span * .34}, ${x} ${fromY + span * .5}`
+          + ` C ${inner} ${fromY + span * .66}, ${inner} ${fromY + span * .84}, ${x} ${fromY + span}`;
+      };
       let path = `M ${right - 48} 24 C ${right - 14} 24, ${right} 42, ${right} 76`;
-      path += ` L ${right} ${bounds[0].bottom - 55}`;
-      path += ` C ${right} ${bounds[0].bottom - 20}, ${left} ${bounds[0].bottom - 20}, ${left} ${bounds[0].bottom + 12}`;
+      path += windDown(right, 76, bounds[0].bottom - 100);
+      path += ` C ${right} ${bounds[0].bottom - 30}, ${left} ${bounds[0].bottom - 20}, ${left} ${bounds[0].bottom + 45}`;
       let currentX = left;
-      let currentY = bounds[0].bottom + 12;
+      let currentY = bounds[0].bottom + 45;
       // Cross the page in section padding, keeping the trail clear of the content.
       bounds.slice(1, -1).forEach((bound, index) => {
-        const bendY = bound.bottom - 25;
         const nextX = index % 2 === 0 ? right : left;
-        path += ` L ${currentX} ${Math.max(currentY, bendY - 30)}`;
-        path += ` C ${currentX} ${bendY + 24}, ${nextX} ${bendY - 24}, ${nextX} ${bendY + 30}`;
+        path += windDown(currentX, currentY, Math.max(currentY, bound.bottom - 100));
+        path += ` C ${currentX} ${bound.bottom - 30}, ${nextX} ${bound.bottom - 20}, ${nextX} ${bound.bottom + 45}`;
         currentX = nextX;
-        currentY = bendY + 30;
+        currentY = bound.bottom + 45;
       });
       const last = bounds[bounds.length - 1];
-      path += ` L ${currentX} ${last.bottom - 28} Q ${currentX} ${last.bottom - 10}, ${currentX === left ? left + 65 : right - 65} ${last.bottom - 10}`;
+      path += windDown(currentX, currentY, last.bottom - 70);
+      path += ` Q ${currentX} ${last.bottom - 10}, ${currentX === left ? left + 65 : right - 65} ${last.bottom - 10}`;
       setLayout({ width, height, path });
     };
     const queueMeasure = () => {
