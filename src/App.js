@@ -4,6 +4,8 @@ import { Bio, experiences, projects, education } from './data/constants';
 import portrait from './images/HeroImage2.png';
 import PixelArt from './components/PixelArt';
 import SkillBadges from './components/Skills/SkillBadges';
+import PaperTrail from './components/PaperTrail';
+import MoleGame from './components/MoleGame';
 import './App.css';
 
 function ExternalLink({ href, children, className = '' }) {
@@ -69,6 +71,7 @@ function App() {
       <div className="header-actions"><button className="light-switch" aria-label={evening ? 'Switch to daytime' : 'Switch to evening'} aria-pressed={evening} onClick={() => setEvening(!evening)}><span aria-hidden="true">{evening ? '☾' : '☼'}</span></button><ExternalLink href={Bio.github} className="hello-link">GitHub</ExternalLink></div>
     </header>
     <main id="main">
+      <PaperTrail />
       <section className="hero section-wrap" id="about">
         <div className="hero-layout">
           <div className="portrait-scene"><figure className="portrait-frame"><img src={portrait} alt="Neha Bhatla" /></figure></div>
@@ -140,6 +143,7 @@ function App() {
           </article>
         ))}
       </section>
+      <MoleGame />
       <section className="contact-section" id="contact"><div className="section-wrap contact-layout"><div className="contact-copy"><h2>Let’s connect.</h2><div className="social-links"><a href={`mailto:${Bio.email}`}>Email ↗</a><ExternalLink href={Bio.linkedin}>LinkedIn</ExternalLink><ExternalLink href={Bio.github}>GitHub</ExternalLink></div></div><div className="note-card"><p className="note-card-heading">Say hi!</p><ContactForm /></div></div></section>
     </main>
     <footer className="site-footer"><a className="footer-wordmark" href="#about">neha bhatla.</a><a href="#about">BACK TO THE TOP ↑</a></footer>

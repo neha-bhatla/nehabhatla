@@ -1,0 +1,6 @@
+#main { position: relative; isolation: isolate; }
+.paper-trail { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
+.paper-trail > svg { display: block; overflow: visible; }
+.paper-trail-route { fill: none; stroke: var(--red); stroke-width: 2; stroke-dasharray: 1 10; stroke-linecap: round; opacity: .38; }
+.paper-plane { filter: drop-shadow(0 3px 2px #513a3015); }
+@media (max-width: 760px) { .paper-trail-route { stroke-width: 1.6; stroke-dasharray: 1 8; opacity: .3; } }
