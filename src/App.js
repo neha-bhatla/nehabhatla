@@ -4,7 +4,7 @@ import { Bio, experiences, projects, education } from './data/constants';
 import portrait from './images/HeroImage2.png';
 import PixelArt from './components/PixelArt';
 import SkillBadges from './components/Skills/SkillBadges';
-import PaperTrail from './components/PaperTrail';
+import DottedTrail from './components/DottedTrail';
 import MoleGame from './components/MoleGame';
 import './App.css';
 
@@ -71,7 +71,7 @@ function App() {
       <div className="header-actions"><button className="light-switch" aria-label={evening ? 'Switch to daytime' : 'Switch to evening'} aria-pressed={evening} onClick={() => setEvening(!evening)}><span aria-hidden="true">{evening ? '☾' : '☼'}</span></button><ExternalLink href={Bio.github} className="hello-link">GitHub</ExternalLink></div>
     </header>
     <main id="main">
-      <PaperTrail />
+      <DottedTrail />
       <section className="hero section-wrap" id="about">
         <div className="hero-layout">
           <div className="portrait-scene"><figure className="portrait-frame"><img src={portrait} alt="Neha Bhatla" /></figure></div>

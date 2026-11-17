@@ -4,7 +4,7 @@ i'm studying software engineering and management at McMaster University and cont
 
 i like building useful software, working with data, and learning how technology and business fit together. always happy to meet new people and try something new.
 
-this is my personal website, with my experience, projects, and skills, plus a few pixel details. follow the paper plane as you scroll, or take a quick break with whack-a-mole.
+this is my personal website, with my experience, projects, and skills, plus a few pixel details. follow the dotted trail as you scroll, or take a quick break with whack-a-mole.
 
 [visit my website](https://neha-bhatla.github.io/nehabhatla/) · [linkedin](https://www.linkedin.com/in/neha-bhatla) · [github](https://github.com/neha-bhatla)
 
@@ -26,11 +26,11 @@ npm test -- --watchAll=false
 
 ## publish an update
 
-commit your changes on `active_updates`, then run:
+commit your changes on `main`, then run:
 
 ```sh
-git push origin active_updates
+git push origin main
 npm run deploy
 ```
 
-the source lives on `active_updates`. the deploy command builds the site and publishes it to `gh-pages` for GitHub Pages.
+the source lives on `main`. the deploy command builds the site and publishes it to `gh-pages` for GitHub Pages.

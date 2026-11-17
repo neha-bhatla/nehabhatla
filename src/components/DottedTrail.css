@@ -1,0 +1,5 @@
+#main { position: relative; isolation: isolate; }
+.dotted-trail { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
+.dotted-trail > svg { display: block; }
+.dotted-trail-route { fill: none; stroke: var(--red); stroke-width: 1.5; stroke-dasharray: 1 11; stroke-linecap: round; opacity: .24; }
+@media (max-width: 760px) { .dotted-trail-route { stroke-width: 1.3; stroke-dasharray: 1 9; opacity: .2; } }
