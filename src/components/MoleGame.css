@@ -1,0 +1,41 @@
+.game-section { padding: 65px 0 75px; border-top: 1px solid var(--line); }
+.game-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.game-copy .eyebrow { margin-bottom: 12px; }
+.game-copy h2 { font-size: 43px; }
+.game-copy h2 > span { color: var(--red); }
+.game-description { color: var(--muted); font-size: 13px; line-height: 1.9; margin: 20px 0 25px; }
+.game-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.game-end { background: var(--card); border-color: var(--red); color: var(--red); }
+.game-skip { font-size: 11px; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+.game-message { font-size: 11px; color: var(--muted); line-height: 1.8; margin: 22px 0 0; min-height: 40px; max-width: 320px; }
+.game-console { width: 100%; max-width: 405px; justify-self: end; background: var(--card); border: 1px solid var(--line); padding: 18px; box-shadow: 5px 5px 0 var(--blush); }
+.game-scoreboard { display: flex; justify-content: space-around; text-align: center; padding: 0 0 15px; }
+.game-scoreboard > div { display: flex; flex-direction: column; gap: 5px; }
+.game-scoreboard span { color: var(--muted); font: 9px 'Space Mono', monospace; }
+.game-scoreboard strong { font: 23px 'Space Mono', monospace; font-variant-numeric: tabular-nums; }
+.game-scoreboard small { font-size: 12px; margin-left: 1px; }
+.game-scoreboard .time-low { color: var(--red); }
+.mole-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 14px; padding: 16px 12px; background-color: #e9eddc; background-image: radial-gradient(#9cae7e38 1px, transparent 1px); background-size: 12px 12px; border: 1px solid #d2d9bd; }
+.mole-hole { position: relative; padding: 0 0 12px; background: transparent; border: 0; min-width: 44px; min-height: 60px; }
+.mole-hole:disabled { cursor: default; opacity: 1; }
+.mole-art { display: block; width: 100%; overflow: hidden; }
+.mole-character { transform: translateY(46px); transition: transform .12s ease-out; }
+.mole-character.is-up { transform: translateY(0); }
+.mole-character.is-bonked { transform: translateY(46px); }
+.hole-number { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; font: 8px 'Space Mono', monospace; color: #65724e; }
+.mole-point { position: absolute; top: 10%; left: 50%; transform: translateX(-50%); color: #6a3a50; background: #fff9e8; padding: 3px 5px; font: 12px 'Space Mono', monospace; animation: mole-point .5s ease-out both; pointer-events: none; }
+.game-instructions { margin: 13px 0 0; color: var(--muted); font: 8px 'Space Mono', monospace; line-height: 1.8; text-align: center; }
+.evening .mole-board { background-color: #555d47; background-image: radial-gradient(#c9d8a52a 1px, transparent 1px); border-color: #6e775d; }
+.evening .hole-number { color: #d0d8ba; }
+@keyframes mole-point { from { opacity: 0; translate: 0 5px; } to { opacity: 1; translate: 0 -5px; } }
+@media (max-width: 760px) {
+  .game-section { padding: 45px 0 55px; }
+  .game-layout { grid-template-columns: 1fr; gap: 20px; }
+  .game-copy h2 { font-size: 36px; }
+  .game-description { margin: 15px 0 20px; }
+  .game-message { margin-top: 17px; min-height: 20px; }
+  .game-console { justify-self: center; max-width: 360px; padding: 15px; }
+  .mole-board { gap: 8px 10px; padding: 12px 10px; }
+  .game-instructions { font-size: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .mole-character { transition: none; } .mole-point { animation: none; } }
