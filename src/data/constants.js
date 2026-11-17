@@ -108,6 +108,17 @@ export const education = [
 
 export const projects = [
   {
+    id: 'coinhub',
+    title: 'CoinHub',
+    date: 'Personal project',
+    category: 'CRYPTO & WEB DEVELOPMENT',
+    art: 'coin',
+    summary: 'Crypto prices, charts, and a watchlist in one place.',
+    description: 'A responsive crypto dashboard for tracking prices, exploring exchanges, and converting currencies. Includes searchable market data, interactive price charts, and a watchlist, using market data from CoinGecko.',
+    tags: ['React', 'Axios', 'Chart.js', 'Sass', 'CoinGecko API'],
+    github: 'https://github.com/neha-bhatla/crypto-app',
+  },
+  {
     id: 'linkedout',
     title: 'LinkedOut Reach',
     date: 'HackThe6ix 2024',
@@ -117,7 +128,7 @@ export const projects = [
     description: 'Co-developed a full-stack networking application that matches job seekers with relevant LinkedIn professionals. Integrated the Cohere API for profile matching and used Selenium and BeautifulSoup for web scraping, with a Python and Flask backend, MongoDB, and a React and TypeScript frontend.',
     image: LinkedOutImage,
     tags: ['Python', 'Flask', 'MongoDB', 'Cohere API', 'React', 'TypeScript', 'Selenium', 'BeautifulSoup'],
-    github: 'https://github.com/neha-bhatla/LinkedOutReach.git',
+    github: 'https://github.com/neha-bhatla/LinkedOutReach',
   },
   {
     id: 'stock-model',
