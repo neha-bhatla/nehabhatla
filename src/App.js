@@ -75,7 +75,7 @@ function App() {
       <section className="hero section-wrap" id="about">
         <div className="hero-layout">
           <div className="portrait-scene"><figure className="portrait-frame"><img src={portrait} alt="Neha Bhatla" /></figure></div>
-          <div className="hero-copy"><h1>Hi, I’m Neha.</h1><p className="hero-role">{Bio.headline}</p><p className="hero-description">{Bio.description}</p><div className="hero-links"><a className="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><ExternalLink href={Bio.linkedin} className="text-link">Let’s connect</ExternalLink></div></div>
+          <div className="hero-copy"><h1>Hi, I’m Neha.</h1><p className="hero-role">{Bio.headline}</p><p className="hero-description">{Bio.description}</p><div className="hero-links"><a className="button primary" href="#experience">Explore my work <span aria-hidden="true">↓</span></a><ExternalLink href={Bio.linkedin} className="text-link">Let’s connect</ExternalLink></div></div>
         </div>
       </section>
       <section className="experience-section" id="experience">
