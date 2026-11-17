@@ -117,7 +117,7 @@ export default function MoleGame() {
       <div className="game-copy">
         <p className="eyebrow">HERE’S A TREAT</p>
         <h2 id="game-title">Whack-a-mole<span>.</span></h2>
-        <p className="game-description">A very serious test of absolutely nothing.<br />You have 20 seconds. Make them count.</p>
+        <p className="game-description">A very serious test.<br />You have 20 seconds. Make them count.</p>
         <div className="game-actions">
           {status === 'playing' ? <button type="button" className="button game-end" onClick={end}>End round</button>
             : <button type="button" className="button primary" onClick={start}>{status === 'idle' ? 'Let’s play' : 'One more round'} <span aria-hidden="true">↗</span></button>}
